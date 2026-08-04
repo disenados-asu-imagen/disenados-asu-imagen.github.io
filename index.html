@@ -25,6 +25,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="dinamico.css">
 
     <script type="application/ld+json">
     {
@@ -317,6 +318,25 @@
         </div>
     </section>
 
+    <section class="seccion" id="avisos">
+        <div class="contenedor panel-elegante">
+            <h2 class="titulo-seccion reveal">Avisos Importantes</h2>
+            <div id="avisos-lista" class="avisos-grid"></div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <div class="contenedor versiculo-carta-wrap reveal">
+            <div class="versiculo-carta">
+                <div class="versiculo-carta-icono"><i class="fas fa-book-open"></i></div>
+                <p class="versiculo-carta-texto" data-contenido="versiculo_dia.texto">
+                    Cargando versículo del día…
+                </p>
+                <p class="versiculo-carta-referencia" data-contenido="versiculo_dia.referencia"></p>
+            </div>
+        </div>
+    </section>
+
     <section id="faq" class="seccion">
         <div class="contenedor panel-elegante">
             <div class="icono-faq-box reveal"><span>?</span></div>
@@ -518,5 +538,6 @@
 
     <!-- Animaciones de scroll reveal -->
     <script src="animaciones.js" defer></script>
+    <script src="dinamico.js" defer></script>
 </body>
 </html>
